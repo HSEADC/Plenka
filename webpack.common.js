@@ -74,10 +74,40 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
+    new webpack.HotModuleReplacementPlugin(),
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
+    }),
+
+    // Gallery
+    new HtmlWebpackPlugin({
+      template: './src/gallery/tutorialfirst.html',
+      filename: './tutorialfirst.html'
+    }),
+
+    // About
+    new HtmlWebpackPlugin({
+      template: './src/about/about.html',
+      filename: './about.html'
+    }),
+
+    // Education
+    new HtmlWebpackPlugin({
+      template: './src/education/education.html',
+      filename: './education.html'
+    }),
+
+    // Articles
+    new HtmlWebpackPlugin({
+      template: './src/articles/articlesmain.html',
+      filename: './articlesmain.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/articlefirst.html',
+      filename: './articles/articlefirst.html'
     }),
 
     // Internal pages

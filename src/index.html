@@ -2,26 +2,49 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>static-site-boilerplate index</title>
+    <title>Медиа о плёночной фотографии</title>
     <analytics></analytics>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
   </head>
 
-  <body class="index">
-    <div>This is a landing page</div>
-    <p><a href="./index.html">Галерея</a></p>
-    <p><a href="./about.html">О нас</a></p>
-    <p><a href="./education.html">Обучение</a></p>
-    <p><a href="./articlesmain.html">Статьи</a></p>
+  <body>
+    <nav>
+      <a href="./index.html"><img src="./images/logo.png" /></a>
+      <!-- <p><a href="./index.html">Галерея</a></p> -->
+      <a href="./about.html"></a><button>О нас</button></a>
+      <!-- <p><a href="./education.html">Обучение</a></p>
+      <p><a href="./articlesmain.html">Статьи</a></p> -->
+    </nav>
+
+    <section class="index"><div class="mainInfo">
+      <h1>
+        Мы — plёnka! <br />
+        Медиа, которое погрузит вас в мир плёночной фотографии!
+      </h1>
+      <p>
+        Плёнка — это больше, чем просто кусочек пластика, согласны? Мы откроем
+        вам мир аналоговой фотографии и покажем, что каждый может создавать
+        уникальные снимки.
+      </p>
+      <form id="my-form" action="https://formspree.io/f/mlderoyk" method="POST">
+        <input type="email" name="email" placeholder="E-mail" />
+        <button id="my-form-button">Подписаться</button>
+        <p id="my-form-status"></p>
+      </form>
+      <div>
+        <a href=""><img src="./images/icons/tg.png"></a>
+        <a href=""><img src="./images/icons/insta.png"></a>
+        <a href=""><img src="./images/icons/vk.png"></a>
+      </div>
+    </div>
+
+    <div class="runningPhotos">
+      <div><img src="./images/runningPhotos/FredLyon1.png"></div>
+      <div><img src="./images/runningPhotos/KenVanSickle1.png"></div>
+      <div><img src="./images/runningPhotos/KenVanSickle2.png"></div>
+      <div><img src="./images/runningPhotos/VivianMayer1.png"></div>
+    </div></section>
   </body>
-  <!-- modify this form HTML and place wherever you want your form -->
-  <form id="my-form" action="https://formspree.io/f/mlderoyk" method="POST">
-    <label>Email:</label>
-    <input type="email" name="email" />
-    <label>Message:</label>
-    <input type="text" name="message" />
-    <button id="my-form-button">Submit</button>
-    <p id="my-form-status"></p>
-  </form>
 
   <!-- Place this script at the end of the body tag -->
   <script>

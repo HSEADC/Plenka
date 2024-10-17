@@ -165,19 +165,24 @@ img {
   z-index: 1;
   animation: verticalRunningPhotos 8s linear infinite;
   justify-content: flex-start;
+  top: -500px;
 
   &:hover {
     animation-play-state: paused;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .runningRedFrame {
-    width: calc(100% - 50px);
-    margin: 25px;
+    width: 100%;
+    margin: auto;
     border: 3px solid #ec2820;
     border-radius: 7px;
     display: flex;
     justify-content: space-between;
-    height: calc(100% - 50px);
+    height: 100%;
     opacity: 0%;
 
     .redTextTop,
@@ -189,6 +194,7 @@ img {
         color: #fff;
         font-weight: 400;
         font-size: 18px;
+        text-decoration: none;
       }
     }
 
@@ -210,6 +216,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 7px;
+    padding: 25px;
     cursor: url('../images/cursorpointer.cur'), auto;
     &:hover .runningRedFrame {
       opacity: 100%;

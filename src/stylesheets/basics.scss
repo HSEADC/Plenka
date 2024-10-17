@@ -266,6 +266,7 @@ img {
       gap: 10px;
       flex-wrap: nowrap;
       position: absolute;
+      top: 0;
       z-index: 1;
       animation: horizontalRunningPhotos 8s linear infinite;
       justify-content: flex-start;
@@ -278,7 +279,7 @@ img {
       #runningPhoto2,
       #runningPhoto3,
       #runningPhoto4 {
-        height: inherit;
+        height: 100%;
         background-position: center;
       }
 

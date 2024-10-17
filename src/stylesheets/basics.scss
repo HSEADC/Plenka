@@ -134,31 +134,34 @@ img {
     top: 0;
   }
   100% {
-    top: -341%;
+    top: -1990px;
   }
 }
 
-@keyframes runningPhotosStop {
-  0% {
-  }
-  100% {
-    top: -341%;
-  }
+.container {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  width: 35%;
+  right: 30px;
 }
-
 .runningPhotos {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 100%;
   gap: 10px;
   flex-wrap: nowrap;
-  overflow: hidden;
   position: absolute;
   z-index: 1;
-  right: 30px;
+  animation: verticalRunningLine 6s linear infinite;
+  justify-content: flex-start;
+
+  &:hover {
+    animation-play-state: paused;
+  }
 
   .runningRedFrame {
-    width: 90%;
+    width: calc(100% - 50px);
     margin: 25px;
     border: 3px solid #ec2820;
     border-radius: 7px;
@@ -190,48 +193,33 @@ img {
     }
   }
 
+  #runningPhoto1,
+  #runningPhoto2,
+  #runningPhoto3,
+  #runningPhoto4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    &:hover .runningRedFrame {
+      opacity: 100%;
+      transition: 0.3s;
+    }
+  }
   #runningPhoto1 {
     background-image: url('../images/runningPhotos/FredLyon1.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
-    &:hover .runningRedFrame {
-      opacity: 100%;
-      transition: 0.3s;
-    }
+    height: 600px;
   }
-
   #runningPhoto2 {
     background-image: url('../images/runningPhotos/KenVanSickle1.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
-    &:hover .runningRedFrame {
-      opacity: 100%;
-      transition: 0.3s;
-    }
+    height: 600px;
   }
-
   #runningPhoto3 {
     background-image: url('../images/runningPhotos/KenVanSickle2.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 300px;
-    &:hover .runningRedFrame {
-      opacity: 100%;
-      transition: 0.3s;
-    }
+    height: 350px;
   }
-
   #runningPhoto4 {
     background-image: url('../images/runningPhotos/VivianMayer1.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
     height: 400px;
-    &:hover .runningRedFrame {
-      opacity: 100%;
-      transition: 0.3s;
-    }
   }
 }
 

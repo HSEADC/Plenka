@@ -164,7 +164,7 @@ img {
     border-radius: 7px;
     display: flex;
     justify-content: space-between;
-    height: 87%;
+    height: calc(100% - 50px);
     opacity: 0%;
 
     .redTextTop,

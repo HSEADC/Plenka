@@ -1,55 +1,62 @@
 @font-face {
   font-family: 'Pragmatica';
-  src: url('../fonts/Pragmatica-ExtraLight.woff2') format('woff2'),
-    url('../fonts/Pragmatica-ExtraLight.woff') format('woff');
+  src: url('../fonts/Pragmatica-ExtraLight.woff2') format('woff2');
+  src: url('../fonts/Pragmatica-ExtraLight.woff') format('woff');
+  src: url('../fonts/Pragmatica-ExtraLight.ttf') format('TrueType');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url('../fonts/Pragmatica-Light.woff2') format('woff2'),
-    url('../fonts/Pragmatica-Light.woff') format('woff');
+  src: url(../fonts/Pragmatica-Light.woff2) format('woff2');
+  src: url(../fonts/Pragmatica-Light.woff) format('woff');
+  src: url(../fonts/Pragmatica-Light.ttf) format('TrueType');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url('../fonts/Pragmatica-Medium.woff2') format('woff2'),
-    url('../fonts/Pragmatica-Medium.woff') format('woff');
+  src: url(../fonts/Pragmatica-Medium.woff2) format('woff2');
+  src: url(../fonts/Pragmatica-Medium.woff) format('woff');
+  src: url(../fonts/Pragmatica-Medium.ttf) format('TrueType');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url('../fonts/Pragmatica-Book.woff2') format('woff2'),
-    url('../fonts/Pragmatica-Book.woff') format('woff');
+  src: url(../fonts/Pragmatica-Book.woff2) format('woff2');
+  src: url(../fonts/Pragmatica-Book.woff) format('woff');
+  src: url(../fonts/Pragmatica-Book.ttf) format('TrueType');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url('../fonts/Pragmatica-Bold.woff2') format('woff2'),
-    url('../fonts/Pragmatica-Bold.woff') format('woff');
+  src: url(../fonts/Pragmatica-Bold.woff2) format('woff2');
+  src: url(../fonts/Pragmatica-Bold.woff) format('woff');
+  src: url(../fonts/Pragmatica-Bold.ttf) format('TrueType');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url('../fonts/Pragmatica-ExtraBold.woff2') format('woff2'),
-    url('../fonts/Pragmatica-ExtraBold.woff') format('woff');
+  src: url(../fonts/Pragmatica-ExtraBold.woff2) format('woff2');
+  src: url(../fonts/Pragmatica-ExtraBold.woff) format('woff');
+  src: url(../fonts/Pragmatica-ExtraBold.ttf) format('TrueType');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url('../fonts/Pragmatica-Black.woff2') format('woff2'),
-    url('../fonts/Pragmatica-Black.woff') format('woff');
+  src: url(../fonts/Pragmatica-Black.woff2) format('woff2');
+  src: url(../fonts/Pragmatica-Black.woff) format('woff');
+  src: url(../fonts/Pragmatica-Black.ttf) format('TrueType');
   font-weight: 700;
   font-style: normal;
 }
@@ -65,48 +72,54 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/Manrope-Light.woff2') format('woff2'),
-    url('../fonts/Manrope-Light.woff') format('woff');
+  src: url(../fonts/Manrope-Light.woff2) format('woff2');
+  src: url(../fonts/Manrope-Light.woff) format('woff');
+  src: url(../fonts/Manrope-Light.ttf) format('TrueType');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
-    url('../fonts/Manrope-Regular.woff') format('woff');
+  src: url(../fonts/Manrope-Regular.woff2) format('woff2');
+  src: url(../fonts/Manrope-Regular.woff) format('woff');
+  src: url(../fonts/Manrope-Regular.ttf) format('TrueType');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
-    url('../fonts/Manrope-Medium.woff') format('woff');
+  src: url(../fonts/Manrope-Medium.woff2) format('woff2');
+  src: url(../fonts/Manrope-Medium.woff) format('woff');
+  src: url(../fonts/Manrope-Medium.ttf) format('TrueType');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/Manrope-Semibold.woff2') format('woff2'),
-    url('../fonts/Manrope-Semibold.woff') format('woff');
+  src: url(../fonts/Manrope-Semibold.woff2) format('woff2');
+  src: url(../fonts/Manrope-Semibold.woff) format('woff');
+  src: url(../fonts/Manrope-SemiBold.ttf) format('TrueType');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
-    url('../fonts/Manrope-Bold.woff') format('woff');
+  src: url(../fonts/Manrope-Bold.woff2) format('woff2');
+  src: url(../fonts/Manrope-Bold.woff) format('woff');
+  src: url(../fonts/Manrope-Bold.ttf) format('TrueType');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
-    url('../fonts/Manrope-ExtraBold.woff') format('woff');
+  src: url(../fonts/Manrope-ExtraBold.woff2) format('woff2');
+  src: url(../fonts/Manrope-ExtraBold.woff) format('woff');
+  src: url(../fonts/Manrope-ExtraBold.ttf) format('TrueType');
   font-weight: 700;
   font-style: normal;
 }

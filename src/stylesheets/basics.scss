@@ -17,8 +17,8 @@ body {
 
 p {
   letter-spacing: -0.02em;
-  font-family: 'Manrope';
-  font-weight: 300;
+  /*font-family: 'Manrope';
+  font-weight: 300;*/
 }
 
 nav {
@@ -197,6 +197,7 @@ img {
     height: 500px;
     &:hover .runningRedFrame {
       opacity: 100%;
+      transition: 0.3s;
     }
   }
 
@@ -207,6 +208,7 @@ img {
     height: 500px;
     &:hover .runningRedFrame {
       opacity: 100%;
+      transition: 0.3s;
     }
   }
 
@@ -217,6 +219,7 @@ img {
     height: 300px;
     &:hover .runningRedFrame {
       opacity: 100%;
+      transition: 0.3s;
     }
   }
 
@@ -227,6 +230,7 @@ img {
     height: 400px;
     &:hover .runningRedFrame {
       opacity: 100%;
+      transition: 0.3s;
     }
   }
 }

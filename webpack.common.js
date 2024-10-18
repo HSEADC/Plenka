@@ -120,6 +120,16 @@ module.exports = {
       filename: './articles/article2.html'
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/articles/article3.html',
+      filename: './articles/article3.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/article4.html',
+      filename: './articles/article4.html'
+    }),
+
     // Internal pages
     // new HtmlWebpackPlugin({
     //   hash: true,

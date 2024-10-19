@@ -7,7 +7,7 @@ body,
 .index {
   height: 100%;
   width: 100%;
-  cursor: url('../images/cursordefault.png'), auto;
+  cursor: url('../images/cursordefault.svg'), auto;
 }
 
 body {
@@ -120,7 +120,6 @@ img {
       color: #ffffff;
       transition: 0.1s;
       padding: 5px 20px;
-      cursor: url('../images/cursordefault.png'), auto;
 
       &:hover {
         background-color: #d61e16;

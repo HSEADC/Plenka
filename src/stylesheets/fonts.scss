@@ -18,9 +18,9 @@
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url(../fonts/Pragmatica-Medium.woff2) format('woff2');
-  src: url(../fonts/Pragmatica-Medium.woff) format('woff');
-  src: url(../fonts/Pragmatica-Medium.ttf) format('TrueType');
+  src: url('../fonts/Pragmatica-Medium.woff2') format('woff2'),
+    url('../fonts/Pragmatica-Medium.woff') format('woff'),
+    url('../fonts/Pragmatica-Medium.ttf') format('TrueType');
   font-weight: 300;
   font-style: normal;
 }
@@ -36,9 +36,9 @@
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url(../fonts/Pragmatica-Bold.woff2) format('woff2');
-  src: url(../fonts/Pragmatica-Bold.woff) format('woff');
-  src: url(../fonts/Pragmatica-Bold.ttf) format('TrueType');
+  src: url('../fonts/Pragmatica-Bold.woff2'), format('woff2'),
+    url('../fonts/Pragmatica-Bold.woff'), format('woff'),
+    url('../fonts/Pragmatica-Bold.ttf'), format('TrueType');
   font-weight: 500;
   font-style: normal;
 }

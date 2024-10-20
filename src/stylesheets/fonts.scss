@@ -22,9 +22,11 @@
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url(../fonts/Pragmatica-Medium.woff2) format('woff2');
-  src: url(../fonts/Pragmatica-Medium.woff) format('woff');
-  src: url(../fonts/Pragmatica-Medium.ttf) format('TrueType');
+  src: url('../fonts/Pragmatica-Book.woff2') format('woff2');
+  src: url('../fonts/Pragmatica-Book.woff') format('woff');
+  src: url('../fonts/Pragmatica-Book.ttf') format('TrueType');
+  src: url('../fonts/Pragmatica_Book.otf') format('OpenType');
+  src: url('../fonts/Pragmatica-Book.eot') format('embedded-opentype');
   font-weight: 300;
   font-style: normal;
 }
@@ -42,9 +44,11 @@
 
 @font-face {
   font-family: 'Pragmatica';
-  src: url(../fonts/Pragmatica-Bold.woff2) format('woff2');
-  src: url(../fonts/Pragmatica-Bold.woff) format('woff');
-  src: url(../fonts/Pragmatica-Bold.ttf) format('TrueType');
+  src: url('../fonts/Pragmatica-Bold.woff2') format('woff2');
+  src: url('../fonts/Pragmatica-Bold.woff') format('woff');
+  src: url('../fonts/Pragmatica-Bold.ttf') format('TrueType');
+  src: url('../fonts/Pragmatica_Bold.otf') format('OpenType');
+  src: url('../fonts/Pragmatica-Bold.eot') format('embedded-opentype');
   font-weight: 500;
   font-style: normal;
 }
@@ -68,6 +72,17 @@
   src: url('../fonts/Pragmatica_Black.otf') format('OpenType');
   src: url('../fonts/Pragmatica-Black.eot') format('embedded-opentype');
   font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gogol';
+  src: url('../fonts/Gogol.woff2') format('woff2');
+  src: url('../fonts/Gogol.woff') format('woff');
+  src: url('../fonts/Gogol.ttf') format('TrueType');
+  src: url('../fonts/Gogol.otf') format('OpenType');
+  src: url('../fonts/Gogol.eot') format('embedded-opentype');
+  font-weight: 300;
   font-style: normal;
 }
 

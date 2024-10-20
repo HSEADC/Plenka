@@ -106,11 +106,6 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/articlefirst.html',
-      filename: './articles/articlefirst.html'
-    }),
-
-    new HtmlWebpackPlugin({
       template: './src/articles/article1.html',
       filename: './articles/article1.html'
     }),

@@ -5,15 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Фред Лайон</title>
     <analytics></analytics>
-    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="../images/logo.svg" type="image/x-icon" />
   </head>
   <body>
     <nav>
-      <a href="../index.html"><img src="../images/logo.png" /></a>
+      <a href="../index.html"><img src="../images/logo.svg" /></a>
       <a href="../about/about.html"><button>О нас</button></a>
     </nav>
     <section class="article">
-      <p>Фред Лайон</p>
+      <a href="../index.html"
+        ><button><img src="../images/arrowback.svg" />Назад</button></a
+      >
+      <section class="articleFirst">
+        <div class="articleHeader">
+          <h1 id="h1FredLyon1">Фред&nbsp;Лайон</h1>
+          <h2 id="h2FredLyon1">1940&nbsp;—&nbsp;1950</h2>
+        </div>
+        <!-- change photo id here -->
+        <div class="articleImage" id="articleMainImageFredLyon1"></div>
+        <div class="articleText">
+          <p>
+            Фред Лайон&nbsp;&mdash; выдающийся фотограф из&nbsp;Сан-Франциско,
+            чьи работы охватывают множество тем и&nbsp;стилей. Его чёрно-белые
+            фотографии отражают не&nbsp;только атмосферу города,
+            но&nbsp;и&nbsp;глубокие человеческие эмоции. Лайон стал известен
+            благодаря своему уникальному стилю, который сочетает
+            документальность и&nbsp;художественное выражение. <br />
+            Город и&nbsp;его жители&nbsp;&mdash; главная тема его творчества.
+            Снимки Лайона переносят зрителей во&nbsp;вселенную оттенков серого.
+            В&nbsp;его атмосферных уличных фотографиях мосты и&nbsp;моряки,
+            рыбаки и&nbsp;полицейские, играющие на&nbsp;улицах дети, неоновые
+            вывески и&nbsp;джазовые музыканты.
+          </p>
+        </div>
+        <h3>Фред Лайон</h3>
+      </section>
+
+      <h2 class="h2header">Настройки камеры</h2>
+
+      <section class="articleSecond">
+        <div class="secondLeft">
+          <div class="shutterAndFlash">
+            <div class="shutterAndFlashInside">
+              <p>Выдержка</p>
+              <h1>F/4</h1>
+            </div>
+            <div class="shutterAndFlashInside">
+              <p>Вспышка</p>
+              <h1>OFF</h1>
+            </div>
+          </div>
+          <h1>ISO 800</h1>
+        </div>
+        <div class="secondRight">
+          <p>Плёнка</p>
+          <h2>Kodak Gold<br />color 35mm<br />200/36</h2>
+          <h2>
+            Камера под наклоном 15&deg;&nbsp;на фотографа, вертикально, ниже
+            уровня глаз объекта
+          </h2>
+        </div>
+      </section>
+
+      <h2 class="h2header">Локация</h2>
+
+      <section class="articleThird">
+        <div class="thirdLeft">
+          <p>
+            Данное фото было сделано на&nbsp;детской площадке почти 100 лет
+            назад, так что будет сложно найти точно такую&nbsp;же, однако стоит
+            присмотреться:<br /><br />&mdash;&nbsp;к&nbsp;форме спирали;
+            <br />&mdash;&nbsp;к&nbsp;контрасту масштабов возвышенности
+            и&nbsp;детей.<br /><br />Поэтому вы&nbsp;можете найти вдохновение
+            на&nbsp;похожий снимок на&nbsp;детской площадке, заметив такие
+            мотивы, вот подходящие места:
+          </p>
+          <img src="../images/handwritten/handwrittenArrow.svg" />
+        </div>
+        <div class="thirdRight">
+          <div class="thirdRightImages">
+            <!-- change photo id here -->
+            <div class="thirdLeftImagesInside" id="thirdLeftFredLyon1"></div>
+            <!-- change photo id here -->
+            <div class="thirdRightImagesInside" id="thirdRightFredLyon1"></div>
+          </div>
+          <p>
+            — Москва, Парк культуры и&nbsp;отдыха им.&nbsp;Горького,
+            55.729532,&nbsp;37.606108<br />— Москва, природный заказник
+            Воробьёвы горы, 55.708934,&nbsp;37.549623<br />— Москва,
+            ул.&nbsp;Крымский Вал, 9,&nbsp;55.725335,&nbsp;37.599110
+          </p>
+          <h2>
+            Повторяй фото по&nbsp;рекомендациям и&nbsp;отмечай plёnka
+            в&nbsp;соцсетях!
+          </h2>
+          <img
+            src="../images/handwritten/circle.svg"
+            class="handwrittenCircle"
+            id="handwrittenCircle1"
+          />
+        </div>
+      </section>
     </section>
+
+    <footer>
+      <a href="../index.html"><img src="../images/logo.svg" /></a>
+      <div class="footerRight">
+        <div>
+          <a href="https://t.me/+NyxCVVnoAjwzYzg6"
+            ><img src="../images/icons/tg.svg"
+          /></a>
+          <a href=""><img src="../images/icons/vk.svg" /></a>
+        </div>
+        <p>Поля Даша Алёна<br />HSE Art&Design School<br />2024</p>
+      </div>
+    </footer>
   </body>
+
+  <script>
+    /*добавление зума при наведении на главное фото*/
+    var addZoom = (target) => {
+      /*change photo id here*/
+      let container = document.getElementById('articleMainImageFredLyon1'),
+        imgsrc =
+          container.currentStyle || window.getComputedStyle(container, false)
+      imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, '')
+
+      let img = new Image()
+      img.src = imgsrc
+      img.onload = () => {
+        let ratio = img.naturalHeight / img.naturalWidth,
+          percentage = ratio * 100 + '%'
+
+        container.onmousemove = (e) => {
+          let rect = e.target.getBoundingClientRect(),
+            xPos = e.clientX - rect.left,
+            yPos = e.clientY - rect.top,
+            xPercent = xPos / (container.clientWidth / 100) + '%',
+            yPercent =
+              yPos / ((container.clientWidth * ratio * 1.5) / 100) + '%'
+
+          Object.assign(container.style, {
+            backgroundPosition: xPercent + ' ' + yPercent,
+            backgroundSize: img.naturalWidth + 'px'
+          })
+        }
+
+        container.onmouseleave = (e) => {
+          Object.assign(container.style, {
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          })
+        }
+      }
+    }
+
+    /*change photo id here*/
+    window.onload = () => addZoom('articleMainImageFredLyon1')
+  </script>
 </html>

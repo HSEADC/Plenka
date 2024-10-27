@@ -68,7 +68,158 @@ h1 {
 }
 
 p {
-  font-size: 0.38em;
+  font-size: 0.5em;
   line-height: 1.1em;
   padding-bottom: 10px;
+}
+.dates {
+  font-size: 3em;
+  line-height: 4em;
+  padding-bottom: 10px;
+  padding-top: 100px;
+  letter-spacing: 90px;
+  gap: 65px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  #date_1604:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1820:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1826:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1839:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1861:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1889:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1923:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1925:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1988:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_19888:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_2010:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_2024:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+}
+.create-line {
+  display: flex;
+  justify-content: center;
+  width: 1360vw;
+  height: 5vw;
+  padding-top: 400px;
+}
+
+.aboutSecond {
+  background-color: #2e2d2d;
+  height: 400px;
+  overflow: hidden;
+  width: 100vw;
+  position: absolute;
+  top: 145px;
+  .timelinePhotos {
+    display: flex;
+    position: absolute;
+    gap: 20px;
+    overflow: hidden;
+    height: 100%;
+    padding: 35px;
+    transition: 0.1s;
+    #timelinePhotos1,
+    #timelinePhotos2,
+    #timelinePhotos3,
+    #timelinePhotos4,
+    #timelinePhotos5,
+    #timelinePhotos6,
+    #timelinePhotos7,
+    #timelinePhotos8,
+    #timelinePhotos9,
+    #timelinePhotos10,
+    #timelinePhotos11,
+    #timelinePhotos12 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #2e2d2d;
+      background-position: left;
+      height: 100%;
+    }
+    #timelinePhotos1 {
+      background-image: url('../images/timelinePhotos/Photo1.svg');
+      width: 600px;
+    }
+    #timelinePhotos2 {
+      background-image: url('../images/timelinePhotos/Photo2.svg');
+      width: 600px;
+    }
+    #timelinePhotos3 {
+      background-image: url('../images/timelinePhotos/Photo3.svg');
+      width: 600px;
+    }
+    #timelinePhotos4 {
+      background-image: url('../images/timelinePhotos/Photo4.svg');
+      width: 600px;
+    }
+    #timelinePhotos5 {
+      background-image: url('../images/timelinePhotos/Photo5.svg');
+      width: 600px;
+    }
+    #timelinePhotos6 {
+      background-image: url('../images/timelinePhotos/Photo6.svg');
+      width: 600px;
+    }
+    #timelinePhotos7 {
+      background-image: url('../images/timelinePhotos/Photo7.svg');
+      width: 600px;
+    }
+    #timelinePhotos8 {
+      background-image: url('../images/timelinePhotos/Photo8.svg');
+      width: 600px;
+    }
+    #timelinePhotos9 {
+      background-image: url('../images/timelinePhotos/Photo9.svg');
+      width: 600px;
+    }
+    #timelinePhotos10 {
+      background-image: url('../images/timelinePhotos/Photo10.svg');
+      width: 600px;
+    }
+    #timelinePhotos11 {
+      background-image: url('../images/timelinePhotos/Photo11.svg');
+      width: 600px;
+    }
+    #timelinePhotos12 {
+      background-image: url('../images/timelinePhotos/Photo12.svg');
+      width: 600px;
+    }
+  }
 }

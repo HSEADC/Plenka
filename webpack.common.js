@@ -12,7 +12,8 @@ module.exports = {
     article1: './src/javascripts/article1.js',
     article2: './src/javascripts/article2.js',
     article3: './src/javascripts/article3.js',
-    article4: './src/javascripts/article4.js'
+    article4: './src/javascripts/article4.js',
+    about: './src/javascripts/about.js'
   },
   output: {
     filename: '[name].js',
@@ -97,7 +98,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about/about.html',
       filename: './about.html',
-      chunks: ['index']
+      chunks: ['index', 'about']
     }),
 
     // Education

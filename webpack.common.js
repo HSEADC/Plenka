@@ -8,7 +8,11 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    article1: './src/javascripts/article1.js',
+    article2: './src/javascripts/article2.js',
+    article3: './src/javascripts/article3.js',
+    article4: './src/javascripts/article4.js'
   },
   output: {
     filename: '[name].js',
@@ -78,51 +82,60 @@ module.exports = {
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['index']
     }),
 
     // Gallery
     new HtmlWebpackPlugin({
       template: './src/gallery/tutorialfirst.html',
-      filename: './tutorialfirst.html'
+      filename: './tutorialfirst.html',
+      chunks: ['index']
     }),
 
     // About
     new HtmlWebpackPlugin({
       template: './src/about/about.html',
-      filename: './about.html'
+      filename: './about.html',
+      chunks: ['index']
     }),
 
     // Education
     new HtmlWebpackPlugin({
       template: './src/education/education.html',
-      filename: './education.html'
+      filename: './education.html',
+      chunks: ['index']
     }),
 
     // Articles
     new HtmlWebpackPlugin({
       template: './src/articles/articlesmain.html',
-      filename: './articlesmain.html'
+      filename: './articlesmain.html',
+      chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/articles/article1.html',
-      filename: './articles/article1.html'
+      filename: './articles/article1.html',
+      chunks: ['index', 'article1']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/articles/article2.html',
-      filename: './articles/article2.html'
+      filename: './articles/article2.html',
+      chunks: ['index', 'article2']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/articles/article3.html',
-      filename: './articles/article3.html'
+      filename: './articles/article3.html',
+      chunks: ['index', 'article3']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/articles/article4.html',
-      filename: './articles/article4.html'
+      filename: './articles/article4.html',
+      chunks: ['index', 'article4']
     }),
 
     // Internal pages

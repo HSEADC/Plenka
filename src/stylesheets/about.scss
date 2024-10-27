@@ -131,9 +131,6 @@ p {
     background-color: #ffffff;
     color: #ec2820;
   }
-  #date_1604:focus .timelinePhotos {
-    left: -600px;
-  }
 }
 .create-line {
   display: flex;
@@ -157,6 +154,7 @@ p {
     overflow: hidden;
     height: 100%;
     padding: 35px;
+    transition: 0.1s;
     #timelinePhotos1,
     #timelinePhotos2,
     #timelinePhotos3,

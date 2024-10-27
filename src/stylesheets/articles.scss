@@ -144,12 +144,12 @@
   }
 
   .articleSecond {
-    background-color: #ec2820;
+    background-image: url('../images/articleSecondRedFrame.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin: 20px 30px 60px 30px;
-    border-radius: 20px;
     padding: 30px;
-    color: #ffffff;
-    cursor: url('../images/cursordefaultwhite.svg') 16 16, auto;
+    color: #ec2820;
     display: flex;
     gap: 20px;
 
@@ -556,6 +556,7 @@
       width: 100%;
       flex-direction: column;
       padding: 20px;
+      background-image: url('../images/articleSecondRedFrameMobile.png');
 
       p {
         font-size: 1.2em;

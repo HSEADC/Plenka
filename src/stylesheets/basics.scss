@@ -3,7 +3,7 @@
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 4px;
 }
 body::-webkit-scrollbar-track {
   background: #e1e1e1;
@@ -47,14 +47,17 @@ nav {
   justify-content: space-between;
   height: 65px;
   z-index: 1001;
+}
 
-  img {
-    height: 47px;
+svg {
+  path {
+    fill: #ec2820;
+    transition: 0.1s;
+  }
 
-    &:hover {
-      filter: invert(6%) sepia(60%) saturate(7454%) hue-rotate(36deg)
-        brightness(90%) contrast(122%);
-    }
+  &:hover path {
+    fill: #b91b12;
+    transition: 0.1s;
   }
 }
 
@@ -142,14 +145,6 @@ button {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-
-    img {
-      height: 40px;
-      &:hover {
-        filter: invert(6%) sepia(60%) saturate(7454%) hue-rotate(36deg)
-          brightness(90%) contrast(122%);
-      }
-    }
   }
 }
 
@@ -261,6 +256,28 @@ button {
   #runningPhoto4 {
     background-image: url('../images/runningPhotos/VivianMayer1.png');
     height: 400px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 100px;
+
+  .footerRight {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    div {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+    }
   }
 }
 
@@ -425,34 +442,15 @@ button {
       }
     }
   }
-}
-
-footer {
-  width: 100%;
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  height: 100px;
-
-  .footerRight {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    img {
-      height: 40px;
-      margin: 0 5px;
-    }
-  }
-
-  img {
-    height: 47px;
-
-    &:hover {
-      filter: invert(6%) sepia(60%) saturate(7454%) hue-rotate(36deg)
-        brightness(90%) contrast(122%);
+  footer {
+    height: 180px;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    .footerRight {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
     }
   }
 }

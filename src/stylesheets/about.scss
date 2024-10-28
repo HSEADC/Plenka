@@ -1,0 +1,232 @@
+.dates {
+  font-size: 3em;
+  line-height: 4em;
+  padding-bottom: 10px;
+  padding-top: 100px;
+  letter-spacing: 90px;
+  gap: 65px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  p {
+    font-size: 0.5em;
+  }
+
+  #date_1604:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1820:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1826:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1839:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1861:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1889:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1923:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1925:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_1988:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_19888:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_2010:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+  #date_2024:hover {
+    background-color: #ffffff;
+    color: #ec2820;
+  }
+}
+.create-line {
+  display: flex;
+  justify-content: center;
+  width: 1360vw;
+  height: 5vw;
+  padding-top: 400px;
+}
+
+.aboutSecond {
+  background-color: #2e2d2d;
+  height: 400px;
+  overflow: hidden;
+  width: 100vw;
+  position: absolute;
+  top: 145px;
+  .timelinePhotos {
+    display: flex;
+    position: absolute;
+    gap: 20px;
+    overflow: hidden;
+    height: 100%;
+    padding: 35px;
+    transition: 0.5s;
+    #timelinePhotos1,
+    #timelinePhotos2,
+    #timelinePhotos3,
+    #timelinePhotos4,
+    #timelinePhotos5,
+    #timelinePhotos6,
+    #timelinePhotos7,
+    #timelinePhotos8,
+    #timelinePhotos9,
+    #timelinePhotos10,
+    #timelinePhotos11,
+    #timelinePhotos12 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #2e2d2d;
+      background-position: left;
+      border-radius: 7px;
+      height: 100%;
+    }
+    #timelinePhotos1 {
+      background-image: url('../images/timelinePhotos/Photo1.svg');
+      width: 600px;
+    }
+    #timelinePhotos2 {
+      background-image: url('../images/timelinePhotos/Photo2.svg');
+      width: 600px;
+    }
+    #timelinePhotos3 {
+      background-image: url('../images/timelinePhotos/Photo3.svg');
+      width: 600px;
+    }
+    #timelinePhotos4 {
+      background-image: url('../images/timelinePhotos/Photo4.svg');
+      width: 600px;
+    }
+    #timelinePhotos5 {
+      background-image: url('../images/timelinePhotos/Photo5.svg');
+      width: 600px;
+    }
+    #timelinePhotos6 {
+      background-image: url('../images/timelinePhotos/Photo6.svg');
+      width: 600px;
+    }
+    #timelinePhotos7 {
+      background-image: url('../images/timelinePhotos/Photo7.svg');
+      width: 600px;
+    }
+    #timelinePhotos8 {
+      background-image: url('../images/timelinePhotos/Photo8.svg');
+      width: 600px;
+    }
+    #timelinePhotos9 {
+      background-image: url('../images/timelinePhotos/Photo9.svg');
+      width: 600px;
+    }
+    #timelinePhotos10 {
+      background-image: url('../images/timelinePhotos/Photo10.svg');
+      width: 600px;
+    }
+    #timelinePhotos11 {
+      background-image: url('../images/timelinePhotos/Photo11.svg');
+      width: 600px;
+    }
+    #timelinePhotos12 {
+      background-image: url('../images/timelinePhotos/Photo12.svg');
+      width: 600px;
+    }
+  }
+}
+.aboutThird {
+  display: flex;
+  height: 80vh;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 30px;
+  gap: 60px;
+  width: 100vw;
+  h1 {
+    color: #ec2820;
+    font-size: 3em;
+    width: 40%;
+  }
+  p {
+    font-size: 1.3em;
+    width: 60%;
+  }
+}
+
+.aboutMobile,
+footer {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .dates {
+    gap: 30px;
+    p {
+      font-size: 0.3em;
+    }
+  }
+  .aboutThird {
+    h1 {
+      font-size: 2.7em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .aboutFirst {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+  }
+  .aboutMobile {
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    gap: 40px;
+
+    img {
+      padding: 10px;
+      height: auto;
+      width: 100vw;
+      background-color: #2e2d2d;
+    }
+    h1 {
+      font-size: 2.5em;
+      font-weight: 400;
+      color: #ec2820;
+      padding: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      color: #000000;
+      padding: 0 20px;
+    }
+  }
+}

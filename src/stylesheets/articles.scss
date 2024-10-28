@@ -35,66 +35,88 @@
     height: 70vh;
     margin: 20px 0 60px 0;
 
-    .articleHeader {
-      width: 10%;
+    .articleFirstBlock {
       display: flex;
-      flex-direction: row;
       height: 100%;
-      align-items: flex-end;
+      gap: 20%;
+      width: 45%;
+      .articleHeader {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: flex-end;
 
-      h1,
-      h2 {
-        line-height: 1;
-        height: 10%;
+        h1,
+        h2 {
+          line-height: 1;
+          height: 10%;
+        }
+
+        h1 {
+          font-size: 1.2em;
+        }
+
+        h2 {
+          font-size: 0.7em;
+        }
+
+        /*add id h1 here*/
+        #h1FredLyon1 {
+          transform: translateX(-10vw) translateY(-11.5vw) rotate(-90deg);
+        }
+
+        #h1KenVanSickle1 {
+          transform: translateX(-11.5vw) translateY(-13vw) rotate(-90deg);
+        }
+
+        #h1VivianMayer1 {
+          transform: translateX(-13vw) translateY(-13.5vw) rotate(-90deg);
+        }
+
+        /*add id h2 here*/
+        #h2FredLyon1 {
+          transform: translateX(-26vw) translateY(-6.2vw) rotate(-90deg);
+        }
+
+        #h2KenVanSickle1 {
+          transform: translateX(-24vw) translateY(-1.3vw) rotate(-90deg);
+        }
+
+        #h2VivianMayer1 {
+          transform: translateX(-26vw) translateY(-0.5vw) rotate(-90deg);
+        }
       }
 
-      h1 {
-        font-size: 1.2em;
+      .articleImage {
+        width: 70%;
+        height: 100%;
+        border-radius: 7px;
+        overflow: hidden;
+        cursor: url('../images/cursoronphoto.svg') 40 40, auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-self: flex-end;
       }
 
-      h2 {
-        font-size: 0.7em;
+      /*change photo and id here*/
+      #articleMainImageFredLyon1 {
+        background-image: url('../images/runningPhotos/FredLyon1.jpg');
       }
 
-      /*add id h1 here*/
-      #h1FredLyon1 {
-        transform: translateX(-10vw) translateY(-11.5vw) rotate(-90deg);
+      #articleMainImageKenVanSickle1 {
+        background-image: url('../images/runningPhotos/KenVanSickle1.png');
       }
 
-      #h1KenVanSickle1 {
-        transform: translateX(-11.5vw) translateY(-13vw) rotate(-90deg);
+      #articleMainImageKenVanSickle2 {
+        background-image: url('../images/runningPhotos/KenVanSickle2.png');
+        height: 70%;
       }
 
-      /*add id h2 here*/
-      #h2FredLyon1 {
-        transform: translateX(-26vw) translateY(-6.2vw) rotate(-90deg);
+      #articleMainImageVivianMayer1 {
+        background-image: url('../images/runningPhotos/VivianMayer1.png');
       }
-
-      #h2KenVanSickle1 {
-        transform: translateX(-24vw) translateY(-1.3vw) rotate(-90deg);
-      }
-    }
-    .articleImage {
-      width: 30%;
-      height: 100%;
-      border-radius: 7px;
-      overflow: hidden;
-      cursor: url('../images/cursoronphoto.svg') 40 40, auto;
-    }
-
-    /*change photo and id here*/
-    #articleMainImageFredLyon1 {
-      background-image: url('../images/runningPhotos/FredLyon1.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    #articleMainImageKenVanSickle1 {
-      background-image: url('../images/runningPhotos/KenVanSickle1.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     .articleText {
@@ -110,6 +132,10 @@
       transform: rotate(-10deg);
       font-size: 4vw;
     }
+
+    #h3KenVanSickle2 {
+      top: 35vh;
+    }
   }
 
   .h2header {
@@ -118,12 +144,12 @@
   }
 
   .articleSecond {
-    background-color: #ec2820;
+    background-image: url('../images/articleSecondRedFrame.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin: 20px 30px 60px 30px;
-    border-radius: 20px;
     padding: 30px;
-    color: #ffffff;
-    cursor: url('../images/cursordefaultwhite.svg') 16 16, auto;
+    color: #ec2820;
     display: flex;
     gap: 20px;
 
@@ -154,10 +180,19 @@
         flex-direction: row;
         gap: 40px;
 
+        .shutterAndFilm {
+          display: flex;
+          gap: 60px;
+        }
+
         .shutterAndFlashInside {
           display: flex;
           flex-direction: column;
           gap: 10px;
+        }
+
+        #shutterAndFlashInsideHide {
+          display: none;
         }
       }
     }
@@ -199,42 +234,63 @@
         .thirdLeftImagesInside {
           width: 25%;
           border-radius: 7px;
-          overflow: hidden;
+          background-repeat: no-repeat;
         }
 
         /*change photo, id and background-position here*/
         #thirdLeftFredLyon1 {
           background-image: url('../images/runningPhotos/FredLyon1.jpg');
           background-size: 300%;
-          background-repeat: no-repeat;
           background-position: 22% 100%;
         }
 
         #thirdLeftKenVanSickle1 {
           background-image: url('../images/runningPhotos/KenVanSickle1.png');
           background-size: 250%;
-          background-repeat: no-repeat;
           background-position: 85% 40%;
+        }
+
+        #thirdLeftKenVanSickle2 {
+          background-image: url('../images/runningPhotos/KenVanSickle2.png');
+          background-size: 250%;
+          background-position: 85% 40%;
+        }
+
+        #thirdLeftVivianMayer1 {
+          background-image: url('../images/runningPhotos/VivianMayer1.png');
+          background-size: 250%;
+          background-position: right bottom;
         }
 
         .thirdRightImagesInside {
           width: 75%;
           border-radius: 7px;
+          background-repeat: no-repeat;
         }
 
         /*change photo, id and background-position here*/
         #thirdRightFredLyon1 {
           background-image: url('../images/runningPhotos/FredLyon1.jpg');
           background-size: 130%;
-          background-repeat: no-repeat;
           background-position: 10% 45%;
         }
 
         #thirdRightKenVanSickle1 {
           background-image: url('../images/runningPhotos/KenVanSickle1.png');
           background-size: 100%;
-          background-repeat: no-repeat;
           background-position: center 8%;
+        }
+
+        #thirdRightKenVanSickle2 {
+          background-image: url('../images/runningPhotos/KenVanSickle2.png');
+          background-size: 100%;
+          background-position: top;
+        }
+
+        #thirdRightVivianMayer1 {
+          background-image: url('../images/runningPhotos/VivianMayer1.png');
+          background-size: 150%;
+          background-position: center;
         }
       }
 
@@ -248,7 +304,7 @@
         font-weight: 200;
       }
 
-      /*change circle position here*/
+      /*add circle id & change circle position here*/
       .handwrittenCircle {
         position: relative;
         width: 10vw;
@@ -262,6 +318,123 @@
       #handwrittenCircle2 {
         top: -485px;
         left: 28vw;
+      }
+
+      #handwrittenCircle3 {
+        top: -500px;
+        left: 33vw;
+      }
+
+      #handwrittenCircle4 {
+        top: -390px;
+        left: 32vw;
+      }
+    }
+  }
+
+  .articleFourth {
+    width: 100%;
+    .otherWorks {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 30px;
+      height: 70vh;
+      margin: 30px;
+      width: 100%;
+
+      a {
+        text-decoration: none;
+
+        .RedFrame {
+          width: 100%;
+          margin: auto;
+          border: 3px solid #ec2820;
+          border-radius: 7px;
+          display: flex;
+          justify-content: space-between;
+          height: 100%;
+          opacity: 0%;
+
+          .redTextTop,
+          .redTextBottom {
+            padding: 10px;
+            background-color: #ec2820;
+
+            p {
+              color: #fff;
+              font-weight: 400;
+              font-size: 18px;
+              text-decoration: none;
+            }
+          }
+
+          .redTextTop {
+            align-self: flex-start;
+            border-radius: 0 0 7px 0;
+          }
+
+          .redTextBottom {
+            align-self: flex-end;
+            border-radius: 7px 0 0 0;
+          }
+        }
+
+        .otherWorksPhoto {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 7px;
+          padding: 25px;
+          height: 100%;
+          width: calc((100vw - 60px) / 3 - 40px);
+          cursor: url('../images/cursorpointer.svg') 24 0, auto;
+          &:hover .RedFrame {
+            opacity: 100%;
+            transition: 0.3s;
+          }
+        }
+
+        /*add id here*/
+        #otherWorksKenVanSickle1_1 {
+          background-image: url('../images/runningPhotos/KenVanSickle2.png');
+        }
+
+        #otherWorksKenVanSickle2_1 {
+          background-image: url('../images/runningPhotos/KenVanSickle1.png');
+        }
+
+        #otherWorksKenVanSickle1_2 {
+          background-image: url('../images/KenVanSickle4.jpg');
+        }
+
+        #otherWorksKenVanSickle1_3 {
+          background-image: url('../images/KenVanSickle5.jpg');
+        }
+
+        #otherWorksFredLyon1_1 {
+          background-image: url('../images/FredLyon2.jpg');
+        }
+
+        #otherWorksFredLyon1_2 {
+          background-image: url('../images/FredLyon3.jpg');
+        }
+
+        #otherWorksFredLyon1_3 {
+          background-image: url('../images/FredLyon4.jpg');
+        }
+
+        #otherWorksVivianMayer1_1 {
+          background-image: url('../images/VivianMayer2.jpg');
+        }
+
+        #otherWorksVivianMayer1_2 {
+          background-image: url('../images/VivianMayer3.jpg');
+        }
+
+        #otherWorksVivianMayer1_3 {
+          background-image: url('../images/VivianMayer4.jpg');
+        }
       }
     }
   }
@@ -289,6 +462,7 @@
 
 @media screen and (max-width: 431px) {
   .article {
+    padding: 90px 20px 0 20px;
     a {
       button {
         content: 'none';
@@ -299,40 +473,59 @@
       line-height: 1.3em;
     }
     .articleFirst {
-      flex-direction: column;
-      display: flex;
       justify-content: flex-start;
+      flex-direction: column;
       gap: 30px;
       align-items: flex-start;
       height: auto;
-      margin: 40px 0 60px 0;
+      margin: 70px 0 60px 0;
+      padding: 0 10px;
 
-      .articleHeader {
+      .articleFirstBlock {
         width: 100%;
-        display: block;
-        height: auto;
-        align-items: flex-start;
+        height: 40vh;
+        .articleHeader {
+          height: auto;
+          align-items: flex-start;
 
-        h1 {
-          font-size: 2.6em;
+          h1 {
+            font-size: 3.3em;
+          }
+
+          h2 {
+            font-size: 1.6em;
+          }
+
+          /*add id here*/
+          #h1FredLyon1 {
+            transform: translateX(-34vw) translateY(21vh) rotate(-90deg);
+          }
+
+          #h2FredLyon1 {
+            transform: translateX(-73vw) translateY(29.5vh) rotate(-90deg);
+          }
+
+          #h1KenVanSickle1 {
+            transform: translateX(-37vw) translateY(20vh) rotate(-90deg);
+          }
+
+          #h2KenVanSickle1 {
+            transform: translateX(-69vw) translateY(35vh) rotate(-90deg);
+          }
+
+          #h1VivianMayer1 {
+            transform: translateX(-41vw) translateY(18.5vh) rotate(-90deg);
+          }
+
+          #h2VivianMayer1 {
+            transform: translateX(-77vw) translateY(35vh) rotate(-90deg);
+          }
         }
 
-        h2 {
-          font-size: 1.8em;
+        .articleImage {
+          height: 100%;
+          width: 100%;
         }
-
-        #h1KenVanSickle1 {
-          transform: translateX(0) translateY(0) rotate(0);
-        }
-
-        #h2KenVanSickle1 {
-          transform: translateX(0) translateY(0) rotate(0);
-        }
-      }
-
-      .articleImage {
-        height: 70vh;
-        width: 100%;
       }
 
       .articleText {
@@ -341,14 +534,143 @@
       }
 
       h3 {
-        font-family: 'Gogol';
-        color: #ec2820;
         position: absolute;
-        top: 95vh;
-        left: 10vw;
-        transform: rotate(-10deg);
-        font-size: 3em;
-        line-height: 0.6em;
+        top: 18vh;
+        left: 35vw;
+        font-size: 2.2em;
+      }
+
+      #h3KenVanSickle2 {
+        top: 30vh;
+      }
+    }
+
+    .h2header {
+      font-size: 1.7em;
+      margin-left: 0;
+      padding: 0 10px;
+    }
+
+    .articleSecond {
+      margin: 20px 0 60px 0;
+      width: 100%;
+      flex-direction: column;
+      padding: 20px;
+      background-image: url('../images/articleSecondRedFrameMobile.png');
+
+      p {
+        font-size: 1.2em;
+      }
+      h1 {
+        font-size: 5em;
+      }
+      h2 {
+        font-size: 1.4em;
+        line-height: 1.1em;
+        letter-spacing: normal;
+      }
+
+      .secondLeft {
+        .shutterAndFlash {
+          flex-direction: column;
+          gap: 20px;
+          #shutterAndFlashInsideHide {
+            display: flex;
+          }
+          .shutterAndFilm {
+            gap: 30px;
+          }
+        }
+      }
+
+      .secondRight {
+        width: 100%;
+        .secondRightHide {
+          display: none;
+        }
+      }
+    }
+
+    .articleThird {
+      font-size: 1.3em;
+      margin: 20px 0 0 0;
+      padding: 0 10px;
+      flex-direction: column;
+      gap: 30px;
+
+      .thirdLeft {
+        width: 100%;
+
+        img {
+          display: none;
+        }
+      }
+
+      .thirdRight {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .thirdRightImages {
+          width: 70%;
+          height: 170px;
+          gap: 10px;
+
+          #thirdLeftKenVanSickle2 {
+            background-size: cover;
+            background-position: 85% 40%;
+          }
+
+          #thirdRightKenVanSickle2 {
+            background-size: 150%;
+            background-position: top;
+          }
+        }
+
+        .handwrittenCircle {
+          transform: scale(2);
+        }
+
+        /*add circle id and change position here*/
+        #handwrittenCircle1 {
+          top: -410px;
+          left: 33vw;
+        }
+
+        #handwrittenCircle2 {
+          top: -400px;
+          left: 33vw;
+        }
+
+        #handwrittenCircle3 {
+          top: -400px;
+          left: 41vw;
+        }
+
+        #handwrittenCircle4 {
+          top: -339px;
+          left: 37vw;
+        }
+
+        h2 {
+          font-size: 2.7em;
+          letter-spacing: -0.02em;
+        }
+      }
+    }
+
+    .articleFourth {
+      .otherWorks {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        margin: 30px 0;
+        padding: 0 10px;
+        a {
+          .otherWorksPhoto {
+            width: 100%;
+            height: 60vh;
+          }
+        }
       }
     }
   }

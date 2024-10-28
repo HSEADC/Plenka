@@ -173,7 +173,8 @@
   }
 }
 
-.aboutMobile {
+.aboutMobile,
+footer {
   display: none;
 }
 
@@ -198,38 +199,34 @@
   .aboutFirst {
     display: none;
   }
+
+  footer {
+    display: flex;
+  }
   .aboutMobile {
+    padding: 90px 0;
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: auto;
-    gap: 10px;
-    .photos_1 {
-      background-color: #2e2d2d;
-      background-size: cover;
-      overflow: hidden;
-      width: 100vw;
-      position: relative;
-      margin-top: 60px;
-      top: 15px;
+    gap: 40px;
 
-      img {
-        padding: 10px;
-        height: auto;
-        width: 100%;
-        max-width: 600px;
-        position: relative;
-      }
-      h1 {
-        font-size: 1em;
-        color: #ec2820;
-        padding: 10px;
-      }
-      p {
-        font-size: 0.3em;
-        color: #000000;
-        padding: 10px;
-      }
+    img {
+      padding: 10px;
+      height: auto;
+      width: 100vw;
+      background-color: #2e2d2d;
+    }
+    h1 {
+      font-size: 2.5em;
+      font-weight: 400;
+      color: #ec2820;
+      padding: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      color: #000000;
+      padding: 0 20px;
     }
   }
 }

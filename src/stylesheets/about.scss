@@ -165,11 +165,71 @@
   h1 {
     color: #ec2820;
     font-size: 3em;
-    margin-bottom: 30px;
     width: 40%;
   }
   p {
     font-size: 1.3em;
-    width: 40%;
+    width: 60%;
+  }
+}
+
+.aboutMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .dates {
+    gap: 30px;
+    p {
+      font-size: 0.3em;
+    }
+  }
+  .aboutThird {
+    h1 {
+      font-size: 2.7em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .aboutFirst {
+    display: none;
+  }
+  .aboutMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    gap: 10px;
+    .photos_1 {
+      background-color: #2e2d2d;
+      background-size: cover;
+      overflow: hidden;
+      width: 100vw;
+      position: relative;
+      margin-top: 60px;
+      top: 15px;
+
+      img {
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+        position: relative;
+      }
+      h1 {
+        font-size: 1em;
+        color: #ec2820;
+        padding: 10px;
+      }
+      p {
+        font-size: 0.3em;
+        color: #000000;
+        padding: 10px;
+      }
+    }
   }
 }

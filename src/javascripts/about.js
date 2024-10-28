@@ -22,7 +22,7 @@ document.getElementById('date_1826').addEventListener('click', function () {
 })
 document.getElementById('date_1839').addEventListener('click', function () {
   timelinePhotos.style.transform = 'translateX(-1860px)'
-  h1Element.innerHTML = 'Первая фотография с людьми'
+  h1Element.innerHTML = 'Первая фотография с&nbsp;людьми'
   pElement.innerHTML =
     'Луи Дагер ввёл новую технологию: он&nbsp;покрывал пластины серебром вместо битума и&nbsp;использовал пары ртути для проявки. Фотография бульвара &laquo;Тампль в&nbsp;Париже&raquo; стала прорывом, так как на&nbsp;ней впервые были изображены люди. Фото было лишь в&nbsp;одном экземпляре.'
 })
@@ -40,7 +40,8 @@ document.getElementById('date_1889').addEventListener('click', function () {
 })
 document.getElementById('date_1923').addEventListener('click', function () {
   timelinePhotos.style.transform = 'translateX(-3720px)'
-  h1Element.innerHTML = 'Негативы на «Leica 0» и плёнка 35мм'
+  h1Element.innerHTML =
+    'Негативы на&nbsp;&laquo;Leica&nbsp;0&raquo; и&nbsp;плёнка 35мм'
   pElement.innerHTML =
     'Появление фотоаппарата &laquo;Leica&nbsp;0&raquo;, который работает с&nbsp;35мм плёнкой. Это привело к&nbsp;стандартизации плёнки. С&nbsp;устройства можно было про-сматривать негативы (Изображение на&nbsp;светочувствительной плёнке, в&nbsp;которой светлые места получаются тёмными, а&nbsp;тёмные&nbsp;&mdash; светлыми).'
 })

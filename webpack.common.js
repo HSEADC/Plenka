@@ -89,35 +89,35 @@ module.exports = {
 
     // Gallery
     new HtmlWebpackPlugin({
-      template: './src/gallery/gallery.html',
-      filename: './gallery/gallery.html',
+      template: './src/gallery.html',
+      filename: './gallery.html',
       chunks: ['index']
     }),
 
     // About
     new HtmlWebpackPlugin({
-      template: './src/about/about.html',
+      template: './src/about.html',
       filename: './about.html',
       chunks: ['index', 'about']
     }),
 
     // Education
     new HtmlWebpackPlugin({
-      template: './src/education/education.html',
+      template: './src/education.html',
       filename: './education.html',
       chunks: ['index']
     }),
 
     // Style Guide
     new HtmlWebpackPlugin({
-      template: './src/styleguide/styleguide.html',
+      template: './src/styleguide.html',
       filename: './styleguide.html',
       chunks: ['index']
     }),
 
     // Articles
     new HtmlWebpackPlugin({
-      template: './src/articles/articlesmain.html',
+      template: './src/articlesmain.html',
       filename: './articlesmain.html',
       chunks: ['index']
     }),

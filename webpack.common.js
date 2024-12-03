@@ -89,8 +89,8 @@ module.exports = {
 
     // Gallery
     new HtmlWebpackPlugin({
-      template: './src/gallery/tutorialfirst.html',
-      filename: './tutorialfirst.html',
+      template: './src/gallery/gallery.html',
+      filename: './gallery.html',
       chunks: ['index']
     }),
 

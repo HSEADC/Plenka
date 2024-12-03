@@ -108,6 +108,13 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // Style Guide
+    new HtmlWebpackPlugin({
+      template: './src/styleguide/styleguide.html',
+      filename: './styleguide.html',
+      chunks: ['index']
+    }),
+
     // Articles
     new HtmlWebpackPlugin({
       template: './src/articles/articlesmain.html',

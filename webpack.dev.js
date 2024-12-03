@@ -6,8 +6,12 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: './dev_build',
-    hot: true
+    /*static: './dev_build',
+    hot: true,*/
+
+    contentBase: path.join(__dirname, 'dist'), // или другой путь к вашей сборке
+    compress: true,
+    port: 9000
   },
   output: {
     filename: '[name].[contenthash].js',

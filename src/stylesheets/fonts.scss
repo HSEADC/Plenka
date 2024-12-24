@@ -1,4 +1,37 @@
 @font-face {
+  font-family: 'Coolvetica';
+  src: url('../fonts/Coolvetica.woff2') format('woff2');
+  src: url('../fonts/Coolvetica.woff') format('woff');
+  src: url('../fonts/Coolvetica.ttf') format('TrueType');
+  src: url('../fonts/Coolvetica.otf') format('OpenType');
+  src: url('../fonts/Coolvetica.eot') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/Georgia.woff2') format('woff2');
+  src: url('../fonts/Georgia.woff') format('woff');
+  src: url('../fonts/Georgia.ttf') format('TrueType');
+  src: url('../fonts/Georgia.otf') format('OpenType');
+  src: url('../fonts/Georgia.eot') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/Georgia-Bold.woff2') format('woff2');
+  src: url('../fonts/Georgia-Bold.woff') format('woff');
+  src: url('../fonts/Georgia-Bold.ttf') format('TrueType');
+  src: url('../fonts/Georgia-Bold.otf') format('OpenType');
+  src: url('../fonts/Georgia-Bold.eot') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Pragmatica';
   src: url('../fonts/Pragmatica-ExtraLight.woff2') format('woff2');
   src: url('../fonts/Pragmatica-ExtraLight.woff') format('woff');

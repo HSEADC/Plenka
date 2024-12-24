@@ -13,7 +13,8 @@ module.exports = {
     article2: './src/javascripts/article2.js',
     article3: './src/javascripts/article3.js',
     article4: './src/javascripts/article4.js',
-    about: './src/javascripts/about.js'
+    about: './src/javascripts/about.js',
+    styleguide: './src/javascripts/styleguide.js'
   },
   output: {
     filename: '[name].js',
@@ -87,13 +88,6 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Gallery
-    new HtmlWebpackPlugin({
-      template: './src/gallery.html',
-      filename: './gallery.html',
-      chunks: ['index']
-    }),
-
     // About
     new HtmlWebpackPlugin({
       template: './src/about.html',
@@ -112,38 +106,50 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index']
+      chunks: ['index', 'styleguide']
     }),
 
     // Articles
     new HtmlWebpackPlugin({
-      template: './src/articlesmain.html',
-      filename: './articlesmain.html',
+      template: './src/articles.html',
+      filename: './articles.html',
       chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/article1.html',
-      filename: './articles/article1.html',
+      template: './src/articles/FredLyon-slide.html',
+      filename: './articles/FredLyon-slide.html',
       chunks: ['index', 'article1']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/article2.html',
-      filename: './articles/article2.html',
+      template: './src/articles/KenVanSickle-carousel.html',
+      filename: './articles/KenVanSickle-carousel.html',
       chunks: ['index', 'article2']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/article3.html',
-      filename: './articles/article3.html',
+      template: './src/articles/KenVanSickle-smoking.html',
+      filename: './articles/KenVanSickle-smoking.html',
       chunks: ['index', 'article3']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/article4.html',
-      filename: './articles/article4.html',
+      template: './src/articles/VivianMayer-reflection.html',
+      filename: './articles/VivianMayer-reflection.html',
       chunks: ['index', 'article4']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/education/ISO.html',
+      filename: './education/ISO.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/how-do-I-find-my-style-in-photography.html',
+      filename: './articles/how-do-I-find-my-style-in-photography.html',
+      chunks: ['index']
     }),
 
     // Internal pages

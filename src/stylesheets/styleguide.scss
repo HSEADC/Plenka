@@ -4,6 +4,7 @@
 
   .navStyleguide {
     background-color: #b8382f;
+    justify-content: space-between;
 
     a {
       text-decoration: none;
@@ -37,6 +38,7 @@
   }
 
   #styleguideMain {
+    cursor: url('../images/cursordefaultwhite.svg') 16 16, auto;
     padding: 40px;
     background-image: url('/src/images/styleguide/styleguide-main.webp');
     background-size: 100%;
@@ -514,6 +516,7 @@
     font-size: 0.095em;
     letter-spacing: 0.05em;
     padding: 0 40px;
+    color: #f3f0ee;
   }
 
   .segment {
@@ -543,5 +546,28 @@
     transform: rotate(-13deg);
     position: relative;
     top: -10px;
+  }
+
+  .up {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #f3f0ee;
+    color: #b8382f;
+    border: 2px #b8382f solid;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+
+    &:hover {
+      background-color: #b8382f;
+      color: #f3f0ee;
+    }
+  }
+
+  #footerStyleguide {
+    p {
+      font-size: 20px;
+    }
   }
 }

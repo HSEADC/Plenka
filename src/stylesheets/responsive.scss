@@ -1,0 +1,713 @@
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .firstLetter,
+  .secondLetter,
+  .thirdLetter,
+  .fourthLetter {
+    font-size: 100px;
+  }
+
+  .mainVideo {
+    .mainSecond {
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .styleguide {
+    p {
+      font-size: 20px;
+    }
+    #aboutBrand {
+      .brandPlatform {
+        div {
+          margin-right: 100px;
+          ul {
+            li {
+              font-size: 20px;
+            }
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    #logotype {
+      .logotypeWrongTypes {
+        #cross {
+          left: 8vw;
+        }
+      }
+    }
+
+    #colors {
+      height: 140vh;
+    }
+
+    #typography {
+      height: 215vh;
+      .typographyRules {
+        #h4Typography {
+          padding: 25vh 0;
+        }
+      }
+    }
+  }
+
+  .article {
+    .articleFirst {
+      align-items: flex-start;
+      height: fit-content;
+      .articleFirstBlock {
+        height: 500px;
+      }
+      .articleText {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .articleSecond {
+      width: calc(100% - 60px);
+      .secondRight {
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .articleFourth {
+      .otherWorks {
+        height: 50vh;
+      }
+    }
+  }
+
+  .gallery {
+    .container {
+      width: 30%;
+    }
+    #secondColumn {
+      left: calc(30% + 5%);
+    }
+  }
+
+  .aboutFirst {
+    .dates {
+      p {
+        font-size: 1.8vw;
+      }
+      .aboutSecond {
+        height: 350px;
+      }
+    }
+  }
+
+  .articlesCards {
+    div {
+      a {
+        .articlesCard {
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .educationSection {
+    .educationHeader {
+      h1 {
+        max-width: 60vw;
+      }
+      a {
+        font-size: 20px;
+      }
+    }
+    .educationArticles {
+      a {
+        .card {
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .educationArticleFirst {
+    div {
+      h3 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .educationArticleSecond {
+    .iso {
+      width: 45%;
+      h1 {
+        font-size: 90px;
+      }
+    }
+  }
+
+  .educationArticleThird {
+    h3 {
+      max-width: 70vw;
+    }
+    a {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .articlesArticleSecond {
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .articlesArticleFourth {
+    h3 {
+      font-size: 25px;
+      max-width: 70vw;
+    }
+  }
+
+  .articlesArticleFifth {
+    div {
+      h3 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 721px) {
+  body {
+    nav {
+      .nav_btns {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .firstLetter,
+    .secondLetter,
+    .thirdLetter,
+    .fourthLetter {
+      font-size: 80px;
+    }
+
+    .mainVideo {
+      .mainRed {
+        img {
+          width: 35%;
+        }
+      }
+      .mainSecond {
+        h3 {
+          font-size: 22px;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .article {
+      .articleFirst {
+        flex-direction: column;
+
+        .articleFirstBlock {
+          width: 100%;
+        }
+        .articleText {
+          width: 100%;
+        }
+      }
+
+      .h3Header {
+        width: 100%;
+      }
+
+      .articleSecond {
+        flex-direction: column;
+      }
+    }
+
+    .mainHeader {
+      div {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 30px 30px 30px;
+      gap: 30px;
+      .container {
+        position: static;
+        width: 100%;
+        overflow: visible;
+        height: fit-content;
+        .mobileNone {
+          display: none;
+        }
+        .runningPhotos {
+          animation-play-state: paused;
+          position: static;
+        }
+        #runningBackwards {
+          animation-play-state: paused;
+        }
+      }
+      #firstColumn,
+      #secondColumn,
+      #thirdColumn {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    .filler {
+      display: none;
+    }
+
+    .aboutFirst {
+      display: none;
+    }
+
+    #footerAbout {
+      display: flex;
+    }
+    .aboutMobile {
+      padding: 90px 0;
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: auto;
+      gap: 40px;
+
+      .photosMobile {
+        padding-bottom: 30px;
+      }
+
+      img {
+        padding: 10px 30px;
+        height: auto;
+        width: 100vw;
+        background-color: #2e2d2d;
+      }
+      h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        color: #b8382f;
+        padding: 30px;
+      }
+      p {
+        font-size: 1.2em;
+        color: #000000;
+        padding: 0 30px;
+      }
+    }
+
+    .articlesCards {
+      flex-direction: column;
+      div {
+        width: 100%;
+        a {
+          .articlesCard {
+            img {
+              height: 40vh;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+
+    .educationSection {
+      .educationArticles {
+        a {
+          width: 60%;
+        }
+      }
+    }
+
+    .educationArticleFirst {
+      flex-direction: column-reverse;
+      width: 100%;
+
+      div {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    .educationArticleSecond {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      div {
+        width: 100%;
+      }
+      .iso {
+        width: 100%;
+        h1 {
+          font-size: 90px;
+        }
+      }
+    }
+
+    .educationArticleThird {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 40px 30px 50px 30px;
+      a {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+
+    .articlesArticleSecond {
+      .pRight {
+        width: 100%;
+      }
+    }
+
+    .articlesArticleThird {
+      flex-wrap: wrap;
+      width: 100%;
+
+      img {
+        width: 43vw;
+      }
+
+      #goBig {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    .articlesArticleFifth {
+      .pRight {
+        width: 100%;
+      }
+    }
+
+    footer {
+      .nav_btns {
+        a {
+          font-size: 18px;
+          padding: 5px 2px;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 431px) {
+  body {
+    nav {
+      .nav_btns {
+        justify-content: space-between;
+        width: 100%;
+        a {
+          padding-left: 2px;
+        }
+      }
+    }
+    p {
+      font-size: 18px;
+    }
+
+    .firstLetter,
+    .secondLetter,
+    .thirdLetter,
+    .fourthLetter {
+      font-size: 60px;
+    }
+
+    .mainVideo {
+      .mainRed {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 70vh;
+        gap: 30px;
+        align-items: flex-start;
+        padding-top: 100px;
+        img {
+          width: 100%;
+        }
+      }
+      .mainSecond {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        align-items: flex-start;
+        h3 {
+          font-size: 20px;
+          width: 100%;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .article {
+      .articleSecond {
+        flex-direction: column;
+        .secondLeft {
+          .shutterAndFlash {
+            gap: 10px;
+            .shutterAndFlashInside {
+              h3 {
+                font-size: 22px;
+              }
+              h1 {
+                font-size: 80px;
+              }
+            }
+          }
+          h1 {
+            font-size: 80px;
+          }
+        }
+        .secondRight {
+          width: 100%;
+          h3 {
+            font-size: 22px;
+          }
+          h2 {
+            font-size: 22px;
+          }
+        }
+      }
+      .articleThird {
+        .thirdFirst {
+          flex-direction: column;
+          width: 100%;
+        }
+        .thirdSecond {
+          flex-direction: column;
+          width: 100%;
+          gap: 30px;
+          img {
+            width: 50%;
+          }
+          .wide {
+            width: 100%;
+          }
+          #goRight {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+
+    .article {
+      .articleFourth {
+        .otherWorks {
+          flex-direction: column;
+          gap: 20px;
+          height: auto;
+          margin: 30px 0;
+          padding: 0 10px;
+          a {
+            .otherWorksPhoto {
+              width: 100%;
+              height: 60vh;
+            }
+          }
+        }
+      }
+    }
+
+    .gallery {
+      padding: 0 20px 30px 20px;
+    }
+
+    .articlesCards {
+      div {
+        a {
+          .articlesCard {
+            h3 {
+              padding-left: 0;
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .aboutFirst {
+      display: none;
+    }
+
+    #footerAbout {
+      display: flex;
+    }
+    .aboutMobile {
+      padding: 90px 0;
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: auto;
+      gap: 40px;
+
+      img {
+        padding: 10px;
+        height: auto;
+        width: 100vw;
+        background-color: #2e2d2d;
+      }
+      h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        color: #b8382f;
+        padding: 20px;
+      }
+      p {
+        font-size: 1.2em;
+        color: #000000;
+        padding: 0 20px;
+      }
+    }
+
+    .educationSection {
+      .educationHeader {
+        a {
+          display: none;
+        }
+      }
+      .educationArticles {
+        flex-direction: column;
+
+        a {
+          width: 100%;
+
+          h3 {
+            padding-left: 0;
+            padding-top: 20px;
+          }
+        }
+      }
+
+      .educationTestsMobile {
+        display: flex;
+      }
+    }
+
+    .articlesArticleSecond {
+      h3 {
+        width: 100%;
+      }
+      p {
+        width: 100%;
+      }
+      .pRight {
+        padding: 0;
+      }
+    }
+
+    .articlesArticleThird {
+      flex-direction: column;
+      gap: 30px;
+      img {
+        width: 100%;
+      }
+
+      #goBig {
+        margin: 0;
+      }
+    }
+
+    .articlesArticleFourth {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+
+      h3 {
+        max-width: 100%;
+      }
+
+      .socialMedia {
+        a {
+          padding-left: 0;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .articlesArticleFifth {
+      div {
+        p {
+          width: 100%;
+        }
+      }
+      .pRight {
+        padding: 0;
+      }
+    }
+
+    .educationArticleSecond {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      margin-top: 0;
+
+      div {
+        width: 100%;
+      }
+      .iso {
+        width: 100%;
+        padding-top: 0;
+        h1 {
+          font-size: 80px;
+        }
+      }
+    }
+
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 20px;
+
+      .nav_btns {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}

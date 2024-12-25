@@ -1,11 +1,15 @@
 .dates {
-  padding-bottom: 20px;
-  padding-top: 100px;
-  gap: 65px;
+  padding: 100px 0 20px 0;
+  gap: 2vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   border-bottom: 2px #2e2d2d solid;
+
+  p {
+    font-size: 1.5vw;
+    cursor: url('../images/cursorpointer.svg') 16 16, auto;
+  }
 
   #date_1604:hover,
   #date_1820:hover,
@@ -21,6 +25,14 @@
   #date_2024:hover {
     color: #b8382f;
     text-decoration: underline 2px;
+  }
+
+  #date_1604 {
+    padding-left: 30px;
+  }
+
+  #date_2024 {
+    padding-right: 30px;
   }
 }
 
@@ -133,57 +145,4 @@
 
 #footerAbout {
   display: none;
-}
-
-@media screen and (max-width: 1025px) {
-  .dates {
-    gap: 30px;
-    p {
-      font-size: 0.3em;
-    }
-  }
-  .aboutThird {
-    h1 {
-      font-size: 2.7em;
-    }
-    p {
-      font-size: 1em;
-    }
-  }
-}
-
-@media screen and (max-width: 431px) {
-  .aboutFirst {
-    display: none;
-  }
-
-  #footerAbout {
-    display: flex;
-  }
-  .aboutMobile {
-    padding: 90px 0;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: auto;
-    gap: 40px;
-
-    img {
-      padding: 10px;
-      height: auto;
-      width: 100vw;
-      background-color: #2e2d2d;
-    }
-    h1 {
-      font-size: 2.5em;
-      font-weight: 400;
-      color: #b8382f;
-      padding: 20px;
-    }
-    p {
-      font-size: 1.2em;
-      color: #000000;
-      padding: 0 20px;
-    }
-  }
 }

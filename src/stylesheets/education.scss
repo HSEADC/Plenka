@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 2px #b8382f solid;
-  padding: 100px 30px 20px 30px;
+  padding: 0 30px 20px 30px;
   align-items: flex-end;
 
   h1 {
     color: #b8382f;
+    max-width: 70vw;
   }
 
   a {
@@ -17,11 +18,29 @@
     font-size: 22px;
     font-family: Manrope;
     font-weight: 200;
-
-    &:hover {
-      background-color: #8c2a24;
-    }
   }
+}
+
+.educationTestsMobile {
+  display: none;
+  justify-content: center;
+  a {
+    background-color: #b8382f;
+    color: #f3f0ee;
+    padding: 13px 30px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 200;
+  }
+}
+
+.educationSection {
+  padding-top: 90px;
+}
+
+#educationSectionFirst {
+  padding-top: 120px;
 }
 
 .educationArticles {
@@ -36,20 +55,11 @@
 
   a {
     width: 40%;
+    cursor: url('../images/cursordefault.svg') 16 16, auto;
     .card {
       display: flex;
       flex-direction: column;
       width: 100%;
-
-      &:hover {
-        background-color: #2e2d2d;
-        transition: 0.3s;
-      }
-
-      &:hover h3 {
-        color: #f3f0ee;
-      }
-
       img {
         border: 2px #2e2d2d solid;
       }
@@ -92,10 +102,23 @@
   }
 }
 
+.activeCard {
+  &:hover {
+    cursor: url('../images/cursorpointer.svg') 16 16, auto;
+    background-color: #2e2d2d;
+    transition: 0.3s;
+  }
+
+  &:hover h3 {
+    color: #f3f0ee;
+  }
+}
+
 .educationArticleFirst {
   display: flex;
   padding: 30px;
   justify-content: space-between;
+  align-items: self-start;
 
   div {
     width: 48%;
@@ -108,7 +131,6 @@
     }
 
     h3 {
-      font-size: 30px;
       color: #b8382f;
     }
 
@@ -154,6 +176,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-top: 0;
     border: 2px #2e2d2d solid;
     gap: 0;
 
@@ -169,6 +192,7 @@
 }
 
 .educationArticleThird {
+  cursor: url('../images/cursordefaultwhite.svg') 16 16, auto;
   margin: 60px 0 0 0;
   padding: 30px;
   background-color: #b8382f;
@@ -188,9 +212,5 @@
     font-size: 25px;
     font-family: Manrope;
     font-weight: 200;
-
-    &:hover {
-      background-color: #d2cfcd;
-    }
   }
 }

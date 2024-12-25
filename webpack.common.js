@@ -10,9 +10,6 @@ module.exports = {
   entry: {
     index: './src/index.js',
     article1: './src/javascripts/article1.js',
-    article2: './src/javascripts/article2.js',
-    article3: './src/javascripts/article3.js',
-    article4: './src/javascripts/article4.js',
     about: './src/javascripts/about.js',
     styleguide: './src/javascripts/styleguide.js'
   },
@@ -85,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index', 'styleguide']
     }),
 
     // About
@@ -117,27 +114,9 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/FredLyon-slide.html',
-      filename: './articles/FredLyon-slide.html',
+      template: './src/gallery/FredLyon-slide.html',
+      filename: './gallery/FredLyon-slide.html',
       chunks: ['index', 'article1']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/KenVanSickle-carousel.html',
-      filename: './articles/KenVanSickle-carousel.html',
-      chunks: ['index', 'article2']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/KenVanSickle-smoking.html',
-      filename: './articles/KenVanSickle-smoking.html',
-      chunks: ['index', 'article3']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/VivianMayer-reflection.html',
-      filename: './articles/VivianMayer-reflection.html',
-      chunks: ['index', 'article4']
     }),
 
     new HtmlWebpackPlugin({

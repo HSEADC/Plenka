@@ -92,10 +92,13 @@ video {
   vertical-align: baseline;
 }
 button,
-a,
 html,
 body {
   cursor: url('../images/cursordefault.svg') 16 16, auto;
+}
+
+a {
+  cursor: url('../images/cursorpointer.svg') 16 16, auto;
 }
 /* HTML5 display-role reset for older browsers */
 article,
